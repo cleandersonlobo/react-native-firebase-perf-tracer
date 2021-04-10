@@ -14,10 +14,8 @@
 	},
 	"scripts": {
 		"clean": "rimraf ./dist",
-		"lint": "prettier . --check && eslint .",
-		"lint:fix": "prettier . --write && eslint . --fix ",
 		"test": "jest",
-		"build": "npm run lint && tsc",
+		"build": "tsc",
 		"prepare": "npm run build",
 		"prepublish": "npm run build"
 	},
@@ -71,11 +69,6 @@
 	"importSort": {
 		".js, .jsx, .ts, .tsx": {
 			"style": "module"
-		}
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "npm run lint"
 		}
 	}
 }

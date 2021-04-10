@@ -1,6 +1,6 @@
 {
 	"name": "react-native-firebase-perf-tracer",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "React Native Component Performance Tracer based on Firebase Performance",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
@@ -14,10 +14,7 @@
 	},
 	"scripts": {
 		"clean": "rimraf ./dist",
-		"test": "jest",
-		"build": "tsc",
-		"prepare": "npm run build",
-		"prepublish": "npm run build"
+		"test": "jest"
 	},
 	"peerDependencies": {
 		"@react-native-firebase/app": "^6.3.4",
